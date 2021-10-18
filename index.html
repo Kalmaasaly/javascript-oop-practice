@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Project Board</title>
-    <link rel="stylesheet" href="assets/styles/app.css" />
-    <script src="assets/scripts/app.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/app.css"/>
+<!--
+    <script src="assets/scripts/App/Tooltip.js" defer type="module"></script>
+-->
+    <script src="assets/scripts/app.js" defer type="module"></script>
 </head>
 <body>
 <template id="tooltip">
@@ -22,8 +25,9 @@
     </header>
     <ul>
         <li id="p1"
-                data-extra-info="Got lifetime access, but would be nice to finish it soon!"
-                class="card">
+            data-extra-info="Got lifetime access, but would be nice to finish it soon!"
+            class="card"
+            draggable="true">
             <h2>Finish the Course</h2>
             <p>Finish the course within the next two weeks.</p>
             <button class="alt">More Info</button>
@@ -46,8 +50,9 @@
     </header>
     <ul>
         <li id="p3"
-                data-extra-info="Super important conference! Fictional but still!"
-                class="card">
+            data-extra-info="Super important conference! Fictional but still!"
+            class="card"
+            draggable="true">
             <h2>Book Hotel</h2>
             <p>
                 Academind conference takes place in December, don't forget to book a
@@ -59,6 +64,6 @@
     </ul>
 </section>
 
-    <button id="stop-analytics-btn">Stop Analytics</button>
+<button id="stop-analytics-btn">Stop Analytics</button>
 </body>
 </html>
