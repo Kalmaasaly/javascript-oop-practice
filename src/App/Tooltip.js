@@ -1,16 +1,17 @@
-import {Component} from './Component.js';
+import {Component} from './Component';
 export class Tooltip extends Component {
     constructor(closeNotifierFunction, text, hostElementId) {
         super(hostElementId);
         this.closeNotifier = closeNotifierFunction;
         this.text = text;
-        this.create();
-    }
-
-    closeTooltip = () => {
+        this.closeTooltip = () => {
         this.detach();
         this.closeNotifier();
     };
+        this.create();
+    }
+
+
 
     create() {
         const tooltipElement = document.createElement('div');

@@ -22,6 +22,7 @@ class App {
         const analyticsScript = document.createElement('script');
         analyticsScript.src = 'assets/scripts/Utility/Analytics.js';
         analyticsScript.defer = true;
+        //console.log("Hi")
         document.head.append(analyticsScript);
     }
 }
